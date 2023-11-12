@@ -27,8 +27,10 @@ app.component('product-display', {
             <button class="button" @click="decrementFromCart">Remove</button>
             </div>
         </div>
-        <review-form @review-submitted="addReview"></review-form>
-        <review-list :reviews="reviews"></review-list>
+        <div class="review-section">
+            <review-form @review-submitted="addReview"></review-form>
+            <review-list :reviews="reviews"></review-list>
+        </div>
     </div>`,
     data() {
         return {
